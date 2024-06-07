@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="341dp"
+        android:layout_height="296dp"
+android:backgroundTint="@color/white"
+        android:background="@drawable/container_border"
+        android:orientation="vertical"
+        android:padding="10dp"
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="21dp">
+
+        <EditText
+            android:id="@+id/totalwokexperience"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+
+            android:autofillHints="no"
+            android:background="@drawable/edittext_border"
+            android:hint="Total work experience"
+            android:paddingStart="20dp"
+            android:textSize="20dp"
+            tools:ignore="HardcodedText,RtlSymmetry,SpUsage,TextFields,TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/experiencecompanybame"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_border"
+            android:hint="Company Name"
+            android:importantForAutofill="no"
+            android:paddingStart="20dp"
+
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,RtlSymmetry,TextFields,TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/experiencededignation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_border"
+            android:hint="Designation"
+
+            android:importantForAutofill="no"
+            android:paddingStart="20dp"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,RtlSymmetry,TextFields" />
+
+        <EditText
+            android:id="@+id/working"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_border"
+            android:hint="currently working (yes/no)"
+
+            android:importantForAutofill="no"
+            android:paddingStart="20dp"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,RtlSymmetry,TextFields,TextSizeCheck" />
+
+
+        <!-- Add EditText fields for specification, college/school name, grades, starting year, end year -->
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

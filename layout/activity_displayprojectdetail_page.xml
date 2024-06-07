@@ -1,0 +1,68 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/containerproject"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="29dp"
+
+        android:orientation="vertical"
+        android:padding="10dp"
+
+        tools:ignore="MissingConstraints,UselessParent">
+
+        <TextView
+            android:id="@+id/displayprojectname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:padding="10dp"
+            android:background="@drawable/edittext_border"
+            android:text="project detail :"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/displayprojectdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+android:layout_margin="10dp"
+            android:text="Experience :"
+            android:textSize="15sp"
+
+            tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck" />
+        <TextView
+            android:id="@+id/skillsused"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+android:padding="5dp"
+            android:text="Experience :"
+            android:textSize="15sp"
+
+            tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck" />
+        <TextView
+            android:id="@+id/displayurl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+
+            android:text="Experience :"
+            android:textSize="15sp"
+
+            tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck" />
+
+
+        <!-- Add EditText fields for specification, college/school name, grades, starting year, end year -->
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

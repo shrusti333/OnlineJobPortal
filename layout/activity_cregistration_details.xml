@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".cregistrationDetails">
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/back"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:src="@drawable/logo"
+
+        app:layout_constraintTop_toBottomOf="@+id/backbutton"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-154dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:text="Company Log In Details "
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <EditText
+        android:id="@+id/signupcname"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/edittext_border"
+        android:hint="company name"
+        android:importantForAutofill="no"
+        android:paddingStart="12dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="HardcodedText,RtlSymmetry,TextFields,TextContrastCheck" />
+
+
+    <EditText
+        android:id="@+id/signupcemail"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/edittext_border"
+
+        android:hint="company email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:paddingStart="12dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        app:layout_constraintTop_toBottomOf="@id/signupcname"
+        tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/signupcpassword"
+
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/edittext_border"
+        android:hint="password"
+
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+
+
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/signupcemail"
+        tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/signupbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+
+        android:layout_marginBottom="92dp"
+        android:text="save and proceed"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.831"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        tools:ignore="HardcodedText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

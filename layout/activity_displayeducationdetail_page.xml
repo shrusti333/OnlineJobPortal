@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/containereducation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="29dp"
+
+        android:orientation="vertical"
+        android:padding="10dp"
+
+        tools:ignore="MissingConstraints,UselessParent"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/displaycoursenamedetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="Experience :"
+            android:textSize="15sp"
+
+            tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck" />
+        <TextView
+            android:id="@+id/displaycoursespecificatindetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_marginLeft="10dp"
+
+            android:text="Experience :"
+            android:textSize="15sp"
+
+            tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck" /></LinearLayout>
+
+        <TextView
+            android:id="@+id/displayinstitution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+            android:text="Experience :"
+            android:textSize="15sp"
+
+            tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck" />
+        <TextView
+            android:id="@+id/displaygrades"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+
+            android:text="Experience :"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/displaystart"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+
+
+                android:text="Experience :"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/displayend"
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:text="Experience :"
+                android:textSize="15sp"
+
+                tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck" />
+        </LinearLayout>
+        <!-- Add EditText fields for specification, college/school name, grades, starting year, end year -->
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".educationdetails_page">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/back"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="46dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:src="@drawable/mainlogo"/>
+
+
+    <TextView
+        android:paddingStart="20dp"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Education Details"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/backbutton"
+        tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry"
+        tools:layout_editor_absoluteX="42dp" />
+
+
+
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:id="@+id/container"
+        android:layout_width="360dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints"
+        android:layout_marginStart="25dp">
+
+        <LinearLayout
+
+            android:layout_width="341dp"
+            android:layout_height="484dp"
+            android:layout_marginBottom="10dp"
+android:backgroundTint="@color/white"
+            android:background="@drawable/container_border"
+            android:orientation="vertical"
+            android:padding="10dp"
+
+            tools:ignore="MissingConstraints,UselessParent"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="21dp">
+
+            <EditText
+                android:id="@+id/graduationEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_border"
+                android:hint="graduation/10/12"
+                android:paddingStart="20dp"
+                android:textSize="20dp"
+                tools:ignore="HardcodedText,RtlSymmetry,SpUsage,TextFields,TextSizeCheck,TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/courseNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_border"
+                android:hint="Course Name"
+                android:importantForAutofill="no"
+                android:paddingStart="20dp"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,RtlSymmetry,TextFields,TextSizeCheck,TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/coursespecificationEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_border"
+                android:hint="course specification"
+                android:importantForAutofill="no"
+                android:paddingStart="20dp"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,RtlSymmetry,TextFields,TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/courseinstituteNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_border"
+                android:hint="College/school/university"
+                android:importantForAutofill="no"
+                android:paddingStart="20dp"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,RtlSymmetry,TextFields,TextSizeCheck,TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/coursegradesEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_border"
+                android:hint="Passing Grades in cgpa"
+                android:importantForAutofill="no"
+                android:paddingStart="20dp"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,RtlSymmetry,TextFields,TextSizeCheck,TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/coursestartrearEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_border"
+                android:hint="Start year"
+                android:importantForAutofill="no"
+                android:paddingStart="20dp"
+                android:textSize="20dp"
+                tools:ignore="HardcodedText,RtlSymmetry,SpUsage,TextFields,TextSizeCheck,TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/courseendyearEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edittext_border"
+                android:hint="End year"
+                android:importantForAutofill="no"
+                android:paddingStart="20dp"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,RtlSymmetry,TextFields,TextContrastCheck" />
+
+        </LinearLayout>
+        <!-- Add EditText fields for specification, college/school name, grades, starting year, end year -->
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginBottom="20dp">
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:text="Add "
+
+        app:layout_constraintTop_toBottomOf="@+id/container"
+        tools:ignore="ButtonStyle,HardcodedText,MissingConstraints,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/educationsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="12dp"
+        android:text="save and proceed"
+
+        app:layout_constraintTop_toBottomOf="@+id/container"
+        tools:ignore="ButtonStyle,HardcodedText,MissingConstraints,TextContrastCheck"
+        tools:layout_editor_absoluteX="234dp" />
+</LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

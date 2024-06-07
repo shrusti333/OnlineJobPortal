@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@color/blue"
+tools:context=".jobAdd_page">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="ScrollViewSize">
+
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/back"
+            android:layout_marginTop="30dp"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    app:cardCornerRadius="30dp"
+    app:cardMaxElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkblue"
+                    android:text="JOB DETAILS"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/enterjobtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/edittext_border"
+                    android:gravity="start|center_vertical"
+                    android:hint="Enter Job Title"
+                    android:padding="16dp"
+                    tools:ignore="Autofill,DuplicateSpeakableTextCheck,HardcodedText,TextFields" />
+
+                <EditText
+                    android:id="@+id/Entercompname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/edittext_border"
+                    android:gravity="start|center_vertical"
+                    android:hint="Enter company Title"
+                    android:padding="16dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields,TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/enterjobtype"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/edittext_border"
+                    android:gravity="start|center_vertical"
+                    android:hint="Enter Job type "
+                    android:importantForAutofill="no"
+                    android:padding="16dp"
+                    tools:ignore="HardcodedText,TextFields,TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/enterSalary"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/edittext_border"
+                    android:gravity="start|center_vertical"
+                    android:hint="Enter salary"
+                    android:padding="16dp"
+                    tools:ignore="Autofill,HardcodedText,TextFields,TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/entershift"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/edittext_border"
+                    android:gravity="start|center_vertical"
+                    android:hint="Enter Job shift/schedule"
+                    android:importantForAutofill="no"
+                    android:padding="16dp"
+                    tools:ignore="HardcodedText,TextFields,TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/joblocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/edittext_border"
+                    android:gravity="start|center_vertical"
+                    android:hint="Enter Job location"
+                    android:importantForAutofill="no"
+                    android:padding="16dp"
+                    tools:ignore="HardcodedText,TextFields,TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/jobbenifits"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/edittext_border"
+                    android:gravity="start|center_vertical"
+                    android:hint="Enter Job benifit"
+                    android:importantForAutofill="no"
+                    android:padding="16dp"
+                    tools:ignore="HardcodedText,TextFields,TextContrastCheck" />
+
+                <EditText
+
+                    android:id="@+id/jobdescrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/edittext_border"
+                    android:gravity="start|center_vertical"
+                    android:hint="Enter Job description"
+                    android:importantForAutofill="no"
+                    android:padding="16dp"
+                    tools:ignore="HardcodedText,TextFields,TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/submitbutton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="65dp"
+                    android:backgroundTint="@color/red"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+
+
+                    tools:ignore="HardcodedText,TextContrastCheck" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@color/white"
+tools:context=".jobApplicantview_page">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/back"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+    <TextView
+        android:id="@+id/jobname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingStart="20dp"
+        android:text="jobname"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/backbutton"
+        tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry"
+        tools:layout_editor_absoluteX="0dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/deletebutton"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="230dp"
+        android:text="Delete"
+        android:backgroundTint="@color/red"
+
+        tools:ignore="HardcodedText,MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck,TextContrastCheck" />
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingStart="20dp"
+        android:text="List of Applicant Applied to the job"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/backbutton"
+        tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+android:layout_marginTop="15dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/container_border"
+
+
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+android:background="@color/yellow"
+
+            android:textColor="@color/black"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:text="Sno"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:background="@color/yellow"
+
+            android:textColor="@color/black"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:text="applicant Name"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="183dp"
+            android:layout_height="match_parent"
+            android:background="@color/yellow"
+            android:padding="5dp"
+            android:text="email"
+            android:textAlignment="center"
+
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userRecycleView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="360dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+</LinearLayout>
+</ScrollView>

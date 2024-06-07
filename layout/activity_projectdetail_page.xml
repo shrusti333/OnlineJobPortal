@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".projectdetail_page">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/back"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="46dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/detailslogo"/>
+
+
+        <TextView
+            android:paddingStart="20dp"
+            android:id="@+id/textView2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Project Details"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/darkblue"
+            app:layout_constraintTop_toBottomOf="@+id/backbutton"
+            tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry"
+            tools:layout_editor_absoluteX="42dp" />
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:id="@+id/container"
+            android:layout_width="360dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="MissingConstraints"
+            android:layout_marginStart="25dp">
+
+            <LinearLayout
+
+                android:layout_width="336dp"
+                android:layout_height="286dp"
+                android:layout_marginBottom="10dp"
+android:backgroundTint="@color/white"
+                android:background="@drawable/container_border"
+                android:orientation="vertical"
+                android:padding="10dp"
+
+                tools:ignore="MissingConstraints,UselessParent"
+                tools:layout_editor_absoluteX="47dp"
+                tools:layout_editor_absoluteY="21dp">
+
+                <EditText
+                    android:id="@+id/projectname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:autofillHints="no"
+                    android:background="@drawable/edittext_border"
+                    android:hint="Project name"
+                    android:paddingStart="20dp"
+                    android:textSize="20dp"
+                    tools:ignore="HardcodedText,RtlSymmetry,SpUsage,TextFields,TextSizeCheck" />
+
+                <EditText
+                    android:id="@+id/projectdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edittext_border"
+                    android:hint="Project Details"
+                    android:importantForAutofill="no"
+                    android:paddingStart="20dp"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,TextFields,TextSizeCheck,DuplicateSpeakableTextCheck" />
+
+                <EditText
+                    android:id="@+id/skillsused"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edittext_border"
+                    android:hint="Key Skill"
+                    android:importantForAutofill="no"
+                    android:paddingStart="20dp"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,TextFields" />
+
+                <EditText
+                    android:id="@+id/url"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edittext_border"
+                    android:hint="URL"
+                    android:importantForAutofill="no"
+                    android:paddingStart="20dp"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,TextFields,TextSizeCheck" />
+
+            </LinearLayout>
+            <!-- Add EditText fields for specification, college/school name, grades, starting year, end year -->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/addButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="12dp"
+                android:text="Add "
+
+                app:layout_constraintTop_toBottomOf="@+id/container"
+                tools:ignore="ButtonStyle,HardcodedText,MissingConstraints,TextContrastCheck" />
+
+            <Button
+                android:id="@+id/experiencesave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="12dp"
+                android:text="save and proceed"
+
+                app:layout_constraintTop_toBottomOf="@+id/container"
+                tools:ignore="ButtonStyle,HardcodedText,MissingConstraints,TextContrastCheck"
+                tools:layout_editor_absoluteX="234dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
