@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CStart_page">
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:id="@+id/layoutchooseuser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:gravity="center_horizontal"
+        tools:ignore="MissingConstraints"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/logo"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Be confident to do the change"
+            android:textColor="@color/blue"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <LinearLayout
+
+            android:id="@+id/innerlayoutchooseuser"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+
+
+            tools:ignore="MissingConstraints"
+            >
+
+            <Button
+                android:id="@+id/RegisterButton"
+                android:layout_margin="20dp"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:textSize="20sp"
+                android:text="Register"
+                tools:ignore="ButtonStyle,HardcodedText" />
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_margin="20dp"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:text="Login "
+                android:textSize="20sp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Companylab" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/red</item> -->
+        <item name="colorPrimaryVariant">@color/red</item> -->
+        <item name="android:statusBarColor">@color/red</item> -->
+    </style>
+    <style name="Base.Theme.NavigationBotton" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/white</item> -->
+        <item name="colorPrimaryVariant">@color/red</item> -->
+        <item name="android:statusBarColor">@color/blue</item> -->
+    </style>
+    <style name="Theme.Companylab" parent="Base.Theme.Companylab" />
+
+    <style name="Theme.App.Splashscreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.Companylab</item>
+
+    </style>
+</resources>

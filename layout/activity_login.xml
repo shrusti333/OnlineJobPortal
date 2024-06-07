@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CLogin">
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/back"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <TextView
+android:paddingStart="20dp"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="log in to jobshop"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/backbutton"
+        tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry"
+        tools:layout_editor_absoluteX="42dp" />
+
+    <EditText
+        android:id="@+id/loginuseremail"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edittext_border"
+        android:hint="user_email"
+        android:importantForAutofill="no"
+        android:layout_marginTop="70dp"
+        android:inputType="textEmailAddress"
+        android:paddingStart="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/loginuserpassword"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="HardcodedText,RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/loginuserpassword"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittext_border"
+        android:hint="password"
+
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:textSize="24sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        app:layout_constraintTop_toBottomOf="@id/loginuseremail"
+        tools:ignore="HardcodedText,RtlSymmetry" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+
+        android:layout_marginBottom="90dp"
+        android:text="sign in"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginuserpassword"
+        app:layout_constraintVertical_bias="0.202"
+        tools:ignore="HardcodedText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
